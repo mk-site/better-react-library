@@ -13,3 +13,7 @@ eslint放在代码commit阶段
 2、
 
 配置eslint参考：https://github.com/taixw2/rollup-react-typescript-eslint-starter/blob/master/package.json
+
+
+待完成：
+1、verifyCommit.js

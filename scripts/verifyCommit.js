@@ -1,5 +1,7 @@
 const chalk = require('chalk')
-const msgPath = process.env.GIT_PARAMS
+var path = require('path');
+console..log('参数：', process.env.HUSKY_GIT_PARAMS);
+var msgPath = path.join('../', process.env.HUSKY_GIT_PARAMS);
 const msg = require('fs')
   .readFileSync(msgPath, 'utf-8')
   .trim()
