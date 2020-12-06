@@ -17,3 +17,4 @@ eslint放在代码commit阶段
 
 待完成：
 1、verifyCommit.js
+2、publish npm包版本号选择
