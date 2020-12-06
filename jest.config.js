@@ -16,14 +16,14 @@ module.exports = {
     },
     testMatch: ['**/__test__/**/*.js'],
     moduleFileExtensions: ['tsx', 'ts', 'js', 'jsx', 'json', 'node'],
-    coverageDirectory: '<rootDir>/coverage',
-    collectCoverageFrom: [
-        'src/**/*.{js,jsx, ts, tsx }',
-        '!tests/**/*',
-        '!**/node_modules/**',
-        '!scripts/**',
-        '!dist/**',
-        '!es/**',
-        '!lib/**',
-    ]
+    // coverageDirectory: '<rootDir>/coverage',
+    // collectCoverageFrom: [
+    //     'src/**/*.{js,jsx, ts, tsx }',
+    //     '!tests/**/*',
+    //     '!**/node_modules/**',
+    //     '!scripts/**',
+    //     '!dist/**',
+    //     '!es/**',
+    //     '!lib/**',
+    // ]
 };

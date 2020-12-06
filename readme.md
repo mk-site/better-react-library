@@ -11,3 +11,5 @@ eslint放在代码commit阶段
 
 1、配置组件库版本号
 2、
+
+配置eslint参考：https://github.com/taixw2/rollup-react-typescript-eslint-starter/blob/master/package.json
