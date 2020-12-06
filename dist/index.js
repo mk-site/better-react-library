@@ -14,28 +14,29 @@
     var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
     // import classNames from 'classnames';
-    // const Start = (props) => {
-    //     return (
-    //         <div>
-    //             文件2
-    //         </div>
-    //     );
-    // };
+    const Button = ({ children }) => {
+        return (React__default['default'].createElement("div", { className: "vik-btn" }, children));
+    };
+    // class Start extends React.Component {
+    //     constructor(props) {
+    //         super(props);
+    //         this.state = {};
+    //     }
+    //     render() {
+    //         return (
+    //             <React.Fragment>
+    //                 <div className="project-start">
+    //                     按钮2
+    //                 </div>
+    //             </React.Fragment>
+    //         );
+    //     }
+    // }
     // export default Start;
-    class Start extends React__default['default'].Component {
-        constructor(props) {
-            super(props);
-            this.state = {};
-        }
-        render() {
-            return (React__default['default'].createElement(React__default['default'].Fragment, null,
-                React__default['default'].createElement("div", { className: "project-start" }, "\u6309\u94AE2")));
-        }
-    }
 
     const version = '1.0.0';
 
-    exports.Start = Start;
+    exports.Button = Button;
     exports.version = version;
 
     Object.defineProperty(exports, '__esModule', { value: true });

@@ -1,4 +1,4 @@
-export { default as Start } from './Button';
+export { default as Button } from './Button';
 
 const version = '1.0.0';
 

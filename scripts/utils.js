@@ -48,6 +48,7 @@ const getDirFile = () => {
             '**/.vscode/**',
             '**/.idea/**',
             '**/__tests__/**',
+            '**/__test__/**',
         ]
     });
     return fileArr;

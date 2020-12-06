@@ -6,11 +6,11 @@
   "main": "lib/index.js",
   "types": "es/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run build && node watch.js",
     "dev:watch": "rollup -c rollup.config.js",
     "build": "npm run clean && rollup -c rollup.config.js",
-    "clean": "rimraf es && rimraf lib && rimraf dist"
+    "clean": "rimraf es && rimraf lib && rimraf dist",
+    "test": "jest --config ./jest.config.js"
   },
   "private": true,
   "repository": {
@@ -60,14 +60,21 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-replace": "^2.3.4",
+    "@testing-library/dom": "^7.28.1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@types/jest": "^26.0.16",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "babel-jest": "^26.6.3",
     "chalk": "^4.1.0",
     "chokidar": "^3.4.3",
     "classnames": "^2.2.6",
     "core-js": "^3.8.0",
     "cross-env": "^7.0.3",
     "cross-spawn": "^7.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "ora": "^5.1.0",
     "postcss-loader": "^4.1.0",
     "postcss-nested": "^4.2.1",
@@ -82,6 +89,7 @@
     "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.29.0",
+    "ts-jest": "^26.4.4",
     "typescript": "^4.1.2"
   }
 }

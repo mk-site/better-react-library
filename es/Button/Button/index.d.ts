@@ -1,7 +1,6 @@
-import React from 'react';
+/// <reference types="react" />
 import './index.css';
-declare class Start extends React.Component {
-    constructor(props: any);
-    render(): JSX.Element;
-}
-export default Start;
+declare const Button: ({ children }: {
+    children: any;
+}) => JSX.Element;
+export default Button;

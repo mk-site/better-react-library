@@ -9,7 +9,7 @@ const ignores = '.git,.DS_Store,.doc,.txt,.md'.split(',')
 process.env.NODE_ENV = 'development';
 function watch () {
     const watcher = chokidar.watch(dir, {
-        ignored: /(^|[\/\\])\../, // ignore dotfiles
+        ignored: /^.+(__test__|git)?.+\\.(DS_Store|doc|txt|md)?$/, // ignore dotfiles
         persistent: true
     });
     watcher.on('change', (path, stats) => {
@@ -17,15 +17,12 @@ function watch () {
             return;
         }
         console.log(path + ' change');
-        // const innerSpinner = ora(`${path} 文件生成中...`).start();
         exec(`npm run dev:watch ${path}`, function (error, stdout, stderr) {
-            // innerSpinner.stop();
             if (error) {
                 console.error(error);
                 return;
             }
             // console.log(stdout);
-            // console.log(stderr);
             console.log(chalk.green(`${stderr}`));
         })
         if (stats){

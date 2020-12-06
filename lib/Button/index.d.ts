@@ -1,3 +1,3 @@
-import Start from './Button';
+import Button from './Button';
 declare const version = "__VERSION__";
-export { Start, version };
+export { Button, version };
